@@ -1,0 +1,42 @@
+{
+    "name": "بـوت اسـتـخـراج جـلـسـات",
+  "description": "بـوت تـلـيـجـرام لأسـتـخـراج كـود الـتـرمـكـس و الـبـايـوجـرام",
+  "logo": "https://telegra.ph/file/518debf154166be046aa0.jpg",
+    "keywords": [
+        "mahmoud"
+    ],
+    
+    "env": {
+      "API_ID": {
+        "description": "ايبي ايدي",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "ايبي هاش",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "توكن البوت",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "ايدي المالك",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "رابط كود مونجو",
+        "value": "",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          }
+      ],
+      "stack": "container"
+  }

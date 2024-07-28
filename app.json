@@ -9,22 +9,22 @@
     "env": {
       "API_ID": {
         "description": "ايبي ايدي",
-        "value": "",
+        "value": "23970174",
         "required": true
       },
       "API_HASH": {
         "description": "ايبي هاش",
-        "value": "",
+        "value": "f1db2e38b2c73448ef09c504187e888d",
         "required": true
       },
       "BOT_TOKEN": {
         "description": "توكن البوت",
-        "value": "",
+        "value": "7365923851:AAGlgzoywP0I1imV97WN7eEdkCt6_imWi_E",
         "required": true
       },
       "OWNER_ID": {
         "description": "ايدي المالك",
-        "value": "",
+        "value": "815010872",
         "required": true
       },
       "MONGO_DB_URI": {

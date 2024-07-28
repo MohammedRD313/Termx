@@ -29,7 +29,7 @@
       },
       "MONGO_DB_URI": {
         "description": "رابط كود مونجو",
-        "value": "",
+        "value": "mongodb+srv://Hamodey2006:Hamodey2006@cluster0.xilnp5n.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
         "required": true
       }
     },

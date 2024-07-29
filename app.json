@@ -1,9 +1,9 @@
 {
     "name": "بـوت اسـتـخـراج جـلـسـات",
   "description": "بـوت تـلـيـجـرام لأسـتـخـراج كـود الـتـرمـكـس و الـبـايـوجـرام",
-  "logo": "https://telegra.ph/file/518debf154166be046aa0.jpg",
+  "logo": "https://telegra.ph/file/93311c29fc46d29896ba2.jpg",
     "keywords": [
-        "mahmoud"
+        "mohamed Ridha"
     ],
     
     "env": {
@@ -29,7 +29,7 @@
       },
       "MONGO_DB_URI": {
         "description": "رابط كود مونجو",
-        "value": "mongodb+srv://Hamodey2006:Hamodey2006@cluster0.xilnp5n.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+        "value": "",
         "required": true
       }
     },

@@ -58,7 +58,7 @@ async def gen_session(
     except ListenerTimeout:
         return await Anony.send_message(
             user_id,
-            "✎┊‌ الوقت المحدد للاستخراج هو 5 دقائق \n\n✎┊‌ من فضلك قم بلاستخراج مجددا.",
+            "</b>✎┊‌ الوقت المحدد للاستخراج هو 5 دقائق \n\n✎┊‌ من فضلك قم بلاستخراج مجددا.</b>",
             reply_markup=retry_key,
         )
 
@@ -70,7 +70,7 @@ async def gen_session(
     except ValueError:
         return await Anony.send_message(
             user_id,
-            "✎┊‌ الـ API ID اللي ارسلته غلط.\n\nمن فضلك اعد الاستخراج.",
+            "</b>✎┊‌ الـ API ID اللي ارسلته غلط.\n\nمن فضلك اعد الاستخراج.</b>",
             reply_markup=retry_key,
         )
 
@@ -84,7 +84,7 @@ async def gen_session(
     except ListenerTimeout:
         return await Anony.send_message(
             user_id,
-            "✎┊‌ الوقت المحدد للاستخراج هو 5 دقائق \n\n✎┊‌ من فضلك قم بلاستخراج مجددا.",
+            "</b>✎┊‌ الوقت المحدد للاستخراج هو 5 دقائق \n\n✎┊‌ من فضلك قم بلاستخراج مجددا.</b>",
             reply_markup=retry_key,
         )
 
@@ -96,7 +96,7 @@ async def gen_session(
     if len(api_hash) < 30:
         return await Anony.send_message(
             user_id,
-            "✎┊‌ الـ API HASH اللي ارسلته غلط.\n\nمن فضلك اعد الاستخراج.",
+            "</b>✎┊‌ الـ API HASH اللي ارسلته غلط.\n\nمن فضلك اعد الاستخراج.</b>",
             reply_markup=retry_key,
         )
 
@@ -110,7 +110,7 @@ async def gen_session(
     except ListenerTimeout:
         return await Anony.send_message(
             user_id,
-            "✎┊‌ الوقت المحدد للاستخراج هو 5 دقائق \n\n✎┊‌ من فضلك قم بلاستخراج مجددا.",
+            "</b>✎┊‌ الوقت المحدد للاستخراج هو 5 دقائق \n\n✎┊‌ من فضلك قم بلاستخراج مجددا.</b>",
             reply_markup=retry_key,
         )
 
@@ -137,19 +137,19 @@ async def gen_session(
     except FloodWait as f:
         return await Anony.send_message(
             user_id,
-            f"✎┊‌ فشل في ارسال الكود للستجيل.\n\nمن فضلك انتظر {f.value or f.x} ثانية و حاول مجدداً.",
+            f"</b>✎┊‌ فشل في ارسال الكود للستجيل.\n\nمن فضلك انتظر</b> {f.value or f.x}</b> ثانية و حاول مجدداً.</b>",
             reply_markup=retry_key,
         )
     except (ApiIdInvalid, ApiIdInvalidError, ApiIdInvalid1):
         return await Anony.send_message(
             user_id,
-            "✎┊‌ الايبي هاش او الايبي ايدي اللي ارسلتهم غلط.\n\nمن فضلك اعد الاستخراج.",
+            "</b>✎┊‌ الايبي هاش او الايبي ايدي اللي ارسلتهم غلط.\n\nمن فضلك اعد الاستخراج.</b>",
             reply_markup=retry_key,
         )
     except (PhoneNumberInvalid, PhoneNumberInvalidError, PhoneNumberInvalid1):
         return await Anony.send_message(
             user_id,
-             "✎┊‌ الرقم اللي ارسلته غلط.\n\nمن فضلك اعد الاستخراج.", 
+             "</b>✎┊‌ الرقم اللي ارسلته غلط.\n\nمن فضلك اعد الاستخراج.", 
             reply_markup=retry_key,
         )
 
@@ -165,7 +165,7 @@ async def gen_session(
     except ListenerTimeout:
         return await Anony.send_message(
             user_id,
-            "✎┊‌ استنيتك 10 دقائق وقتك خلص.\n\nمن فضلك استخرج مجدداً.", 
+            "</b>✎┊‌ استنيتك 10 دقائق وقتك خلص.\n\nمن فضلك استخرج مجدداً.</b>", 
             reply_markup=retry_key,
         )
 
@@ -178,13 +178,13 @@ async def gen_session(
     except (PhoneCodeInvalid, PhoneCodeInvalidError, PhoneCodeInvalid1):
         return await Anony.send_message(
             user_id,
-            "✎┊‌ الكود اللي ارسلته:<b>غلط.</b>\n\nمن فضلك اعد الاستخراج مجدداً.",
+            "</b>✎┊‌ الكود اللي ارسلته:<b>غلط.</b>\n\nمن فضلك اعد الاستخراج مجدداً.</b>",
             reply_markup=retry_key,
         )
     except (PhoneCodeExpired, PhoneCodeExpiredError, PhoneCodeExpired1):
         return await Anony.send_message(
             user_id,
-            "✎┊‌ الكود اللي ارسلته:<b>منتهي الصلاحية.</b>\n\nمن فضلك اعد الاستخراج مجدداً.",
+            "</b>✎┊‌ الكود اللي ارسلته:<b>منتهي الصلاحية.</b>\n\nمن فضلك اعد الاستخراج مجدداً.</b>",
             reply_markup=retry_key,
         )
     except (SessionPasswordNeeded, SessionPasswordNeededError, SessionPasswordNeeded1):
@@ -198,7 +198,7 @@ async def gen_session(
         except ListenerTimeout:
             return Anony.send_message(
                 user_id,
-                "✎┊‌ الوقت المحدد للاستخراج هو 5 دقائق \n\n✎┊‌ من فضلك قم بلاستخراج مجددا.",
+                "</b>✎┊‌ الوقت المحدد للاستخراج هو 5 دقائق \n\n✎┊‌ من فضلك قم بلاستخراج مجددا.</b>",
                 reply_markup=retry_key,
             )
 
@@ -214,7 +214,7 @@ async def gen_session(
         except (PasswordHashInvalid, PasswordHashInvalidError, PasswordHashInvalid1):
             return await Anony.send_message(
                 user_id,
-                "✎┊‌ كلمة سر تحقق الخطوتين اللي ارسلتها غلط.\n\nمن فضلك اعد الاستخراج.",
+                "</b>✎┊‌ كلمة سر تحقق الخطوتين اللي ارسلتها غلط.\n\nمن فضلك اعد الاستخراج.</b>",
                 reply_markup=retry_key,
             )
 
@@ -222,16 +222,16 @@ async def gen_session(
         return await Anony.send_message(user_id, f"خطأ : <code>{str(ex)}</code>")
 
     try:
-        txt = """
+        txt = """</b>
                 <b>تم استخراج كود جلستك من:</b> @Termx00bot
 نوع الجلسة: {0}
 
 <code>{1}</code>
 
-<b>✎┊‌انـتـبـه❗:</b> لا تعطي كود جلستك لأي شخص، يمكن له اختراق او حذف حسابك بواسطة الكود!
+<b>✎┊‌انـتـبـه❗:</b></b> لا تعطي كود جلستك لأي شخص، يمكن له اختراق او حذف حسابك بواسطة الكود!</b>
 <b>✎┊‌المطور:</b> @Zo_r0 , @I_e_e_l
 <b>✎┊‌قناة المطور:</b> @Scorpions_scorp
-"""
+</b>"""
         if telethon:
             string_session = client.session.save()
             await client.send_message(
@@ -255,7 +255,7 @@ async def gen_session(
         await client.disconnect()
         await Anony.send_message(
             chat_id=user_id,
-            text=f"تم إستخراج بنجاح جلسة {ty}.\n\nمن فضلك تحقق من الرسائل المحفوظة.\n\nبوت الاستخراج بواسطة: @Termx00bot.",
+            text=f"</b>تم إستخراج بنجاح جلسة {ty}.\n\nمن فضلك تحقق من الرسائل المحفوظة.\n\nبوت الاستخراج بواسطة</b>: @Termx00bot.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [

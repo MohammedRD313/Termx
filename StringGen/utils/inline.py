@@ -9,7 +9,7 @@ keyboard = InlineKeyboardMarkup(
                     InlineKeyboardButton(text="ابدء الاستخراج ✍🏻", callback_data="gensession")
                     ],
                     [
-                    InlineKeyboardButton("اوامـر الـبـوت", url="https://telegra.ph/%D8%A7%D9%88%D8%A7%D9%85%D8%B1-%D8%A8%D9%88%D8%AA-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AE%D8%B1%D8%A7%D8%AC-10-11")
+                    InlineKeyboardButton("اوامـر الـبـوت", url="https://telegra.ph/%F0%9D%97%A0%F0%9D%97%BC%F0%9D%97%B5%F0%9D%97%AE%F0%9D%97%BA%F0%9D%97%BA%F0%9D%97%B2%F0%9D%97%B1-%F0%9D%97%A5%F0%9D%97%B6%F0%9D%97%B1%F0%9D%97%B5%F0%9D%97%AE--%F0%9D%97%99-07-29-3")
                     ],
                 [
                     InlineKeyboardButton("المساعد ⚙️", user_id=OWNER_ID),

@@ -12,7 +12,7 @@ keyboard = InlineKeyboardMarkup(
                     InlineKeyboardButton("اوامـر الـبـوت", url="https://telegra.ph/%F0%9D%97%A0%F0%9D%97%BC%F0%9D%97%B5%F0%9D%97%AE%F0%9D%97%BA%F0%9D%97%BA%F0%9D%97%B2%F0%9D%97%B1-%F0%9D%97%A5%F0%9D%97%B6%F0%9D%97%B1%F0%9D%97%B5%F0%9D%97%AE--%F0%9D%97%99-07-29-3")
                     ],
                 [
-                    InlineKeyboardButton("𝘀𝘂𝗽𝗽𝗼𝗿𝘁 ⚙️", url="t.me/Zo_r0),
+                    InlineKeyboardButton("𝘀𝘂𝗽𝗽𝗼𝗿𝘁 ⚙️", user_id=OWNER_ID),
                     InlineKeyboardButton("𝗦𝗰𝗼𝗿𝗽𝗶𝗼𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 ✏️", url="t.me/Scorpion_scorp")
                 ]
             ]

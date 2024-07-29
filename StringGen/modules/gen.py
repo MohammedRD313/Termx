@@ -103,7 +103,7 @@ async def gen_session(
     try:
         phone_number = await Anony.ask(
             identifier=(message.chat.id, user_id, None),
-            text="</b>✎┊‌يـرجـى إرسـال رقـم هاتفـك مـع رمـز الدولة مثــال 📱: 964xxxxxxxxxx+</b>",
+            text="</b>✎┊‌يـرجـى إرسـال رقـم هاتفـك مـع رمـز الدولة مثــال</b> 📱: 964xxxxxxxxxx+",
             filters=filters.text,
             timeout=300,
         )

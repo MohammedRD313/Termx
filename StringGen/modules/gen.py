@@ -46,7 +46,7 @@ async def gen_session(
     else:
         ty = f"<b>Pyrogram | بايوجرام ²</b>"
 
-    await message.reply_text(f"✎┊‌ جار بدأ استخراج جلسة {ty}...")
+    await message.reply_text(f"</b>✎┊‌ جار بدأ استخراج جلسة </b>{ty}...")
 
     try:
         api_id = await Anony.ask(
@@ -103,7 +103,7 @@ async def gen_session(
     try:
         phone_number = await Anony.ask(
             identifier=(message.chat.id, user_id, None),
-            text="<b>✎┊‌ يـرجـى إرسـال رقـم هاتفـك مـع رمـز الدولة مثــال 📱: +964xxxxxxxxxx</b>",
+            text="</b>✎┊‌يـرجـى إرسـال رقـم هاتفـك مـع رمـز الدولة مثــال 📱: 964xxxxxxxxxx+</b>",
             filters=filters.text,
             timeout=300,
         )
@@ -165,7 +165,7 @@ async def gen_session(
     except ListenerTimeout:
         return await Anony.send_message(
             user_id,
-            "</b>✎┊‌ استنيتك 10 دقائق وقتك خلص.\n\nمن فضلك استخرج مجدداً.</b>", 
+            "</b>✎┊‌ الوقت المحدد للاستخراج هو 5 دقائق \n\n✎┊‌ من فضلك قم بلاستخراج مجددا.</b>", 
             reply_markup=retry_key,
         )
 
@@ -222,16 +222,16 @@ async def gen_session(
         return await Anony.send_message(user_id, f"خطأ : <code>{str(ex)}</code>")
 
     try:
-        txt = """</b>
+        txt = """
                 <b>تم استخراج كود جلستك من:</b> @Termx00bot
-نوع الجلسة: {0}
+</b>نوع الجلسة: {0}</b>
 
 <code>{1}</code>
 
 <b>✎┊‌انـتـبـه❗:</b></b> لا تعطي كود جلستك لأي شخص، يمكن له اختراق او حذف حسابك بواسطة الكود!</b>
 <b>✎┊‌المطور:</b> @Zo_r0 , @I_e_e_l
 <b>✎┊‌قناة المطور:</b> @Scorpions_scorp
-</b>"""
+"""
         if telethon:
             string_session = client.session.save()
             await client.send_message(

@@ -12,8 +12,8 @@ keyboard = InlineKeyboardMarkup(
                     InlineKeyboardButton("اوامـر الـبـوت", url="https://telegra.ph/%D8%A7%D9%88%D8%A7%D9%85%D8%B1-%D8%A8%D9%88%D8%AA-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AE%D8%B1%D8%A7%D8%AC-10-11")
                     ],
                 [
-                    InlineKeyboardButton("الـمـطـور👷", user_id=OWNER_ID),
-                    InlineKeyboardButton("𝗦𝗰𝗼𝗿𝗽𝗶𝗼𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 ✏️", url="https://telegra.ph/%D8%A7%D9%88%D8%A7%D9%85%D8%B1-%D8%A8%D9%88%D8%AA-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AE%D8%B1%D8%A7%D8%AC-10-11")
+                    InlineKeyboardButton("المساعد ⚙️", user_id=OWNER_ID),
+                    InlineKeyboardButton("𝗦𝗰𝗼𝗿𝗽𝗶𝗼𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 ✏️", url="t.me/@Scorpion_scorp")
                 ]
             ]
         )
@@ -21,10 +21,10 @@ keyboard = InlineKeyboardMarkup(
 gen_key = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="بايروجورام v1", callback_data="pyrogram1"),
-            InlineKeyboardButton(text="بايروجورام v2", callback_data="pyrogram"),
+            InlineKeyboardButton(text="Pyrogram | بايوجرام ¹", callback_data="pyrogram1"),
+            InlineKeyboardButton(text="Pyrogram | بايوجرام ²", callback_data="pyrogram"),
         ],
-        [InlineKeyboardButton(text="تليثون", callback_data="telethon")],
+        [InlineKeyboardButton(text="Telethon | تيليثون", callback_data="telethon")],
     ]
 )
 
